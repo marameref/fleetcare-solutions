@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fleetcare-express-site.lovable.app/sitemap.xml
