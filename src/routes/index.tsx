@@ -8,13 +8,27 @@ import {
 import logo from "@/assets/fleetcare-logo.jpeg";
 import heroVan from "@/assets/hero-van.jpg";
 
+const SITE_URL = "https://fleetcare-express-site.lovable.app";
+const OG_IMAGE =
+  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e783e50-9616-4650-a5fa-ba697799b56d/id-preview-3eea0366--bbdf9a04-5568-4f9c-b017-d722b724feb1.lovable.app-1778761556580.png";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "FleetCare Solutions — 24/7 Mobile Tire & Roadside Service" },
-      { name: "description", content: "Fast, professional mobile tire service & roadside assistance across Hampton Roads, Virginia. We come to you — call (948) 888-6444." },
-      { property: "og:title", content: "FleetCare Solutions — Mobile Tire Service" },
-      { property: "og:description", content: "24/7 mobile tire & roadside assistance. We come to you, so you can keep moving." },
+      { title: "Mobile Tire Service & 24/7 Roadside Assistance Hampton Roads, VA | FleetCare Solutions" },
+      { name: "description", content: "FleetCare Solutions LLC offers 24/7 mobile tire repair, mounting, balancing, jump starts, gas delivery & lockout service across Hampton Roads, VA. We come to you — call (948) 888-6444." },
+      { name: "keywords", content: "mobile tire service, roadside assistance, flat tire repair, mobile tire repair Hampton Roads, 24/7 tire service Virginia Beach, jump start service Norfolk, tire mounting balancing, lockout service, gas delivery" },
+      { property: "og:title", content: "FleetCare Solutions — 24/7 Mobile Tire & Roadside Assistance in Hampton Roads, VA" },
+      { property: "og:description", content: "Fast, professional mobile tire repair and roadside assistance across Hampton Roads, Virginia. We come to you — 24 hours a day." },
+      { property: "og:url", content: SITE_URL + "/" },
+      { property: "og:image", content: OG_IMAGE },
+      { property: "og:image:alt", content: "FleetCare Solutions mobile tire service van" },
+      { name: "twitter:title", content: "FleetCare Solutions — 24/7 Mobile Tire & Roadside Assistance" },
+      { name: "twitter:description", content: "Mobile tire repair and roadside help across Hampton Roads, Virginia. We come to you — 24/7." },
+      { name: "twitter:image", content: OG_IMAGE },
+    ],
+    links: [
+      { rel: "canonical", href: SITE_URL + "/" },
     ],
   }),
   component: Landing,
