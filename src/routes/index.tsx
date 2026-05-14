@@ -164,7 +164,7 @@ function Landing() {
           <div className="relative fade-up">
             <div className="absolute -inset-6 bg-accent-gold/20 rounded-3xl blur-3xl" />
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-premium">
-              <img src={heroVan} alt="FleetCare mobile service van" width={1280} height={896} className="w-full h-auto" />
+              <img src={heroVan} alt="FleetCare Solutions mobile tire service van providing 24/7 roadside assistance in Hampton Roads, Virginia" width={1280} height={896} loading="eager" fetchPriority="high" className="w-full h-auto" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/20">
                 <div>
@@ -330,7 +330,7 @@ function Landing() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/5 rounded-3xl" />
-            <img src={heroVan} alt="FleetCare service" width={1280} height={896} loading="lazy" className="relative rounded-2xl shadow-premium w-full h-auto" />
+            <img src={heroVan} alt="FleetCare technician performing mobile tire repair on-site" width={1280} height={896} loading="lazy" className="relative rounded-2xl shadow-premium w-full h-auto" />
           </div>
         </div>
       </section>
@@ -376,7 +376,7 @@ function Landing() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             <div>
               <div className="flex items-center gap-2.5">
-                <img src={logo} alt="FleetCare" className="h-11 w-11 rounded-md object-cover" />
+                <img src={logo} alt="FleetCare Solutions LLC logo" loading="lazy" className="h-11 w-11 rounded-md object-cover" />
                 <div className="leading-tight">
                   <div className="text-base font-extrabold tracking-tight">FLEETCARE</div>
                   <div className="text-[10px] font-semibold tracking-[0.18em] text-white/60">SOLUTIONS LLC</div>
