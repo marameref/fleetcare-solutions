@@ -389,7 +389,7 @@ function Landing() {
               <div className="text-sm font-bold tracking-wider text-accent-gold">CONTACT</div>
               <ul className="mt-5 space-y-3 text-sm text-white/75">
                 <li><a href={TEL} className="flex items-center gap-2 hover:text-accent-gold"><Phone className="h-4 w-4" /> {PHONE}</a></li>
-                <li><a href="mailto:info@fleetcaresolutions.com" className="flex items-center gap-2 hover:text-accent-gold"><Mail className="h-4 w-4" /> info@fleetcaresolutions.com</a></li>
+                <li><a href="mailto:info@fleetcaresolutions.com" className="flex items-center gap-2 hover:text-accent-gold"><Mail className="h-4 w-4" />info@fleetcaresolutions.com</a></li>
                 <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5" /> Hampton Roads, Virginia</li>
               </ul>
             </div>
