@@ -306,6 +306,9 @@ function Landing() {
                 </div>
                 <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </a>
+              <a href={SMS} className="mt-3 w-full inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-2xl font-bold btn-press hover:bg-white/10">
+                <MessageSquare className="h-5 w-5" /> Text Us
+              </a>
               <a href={WA} target="_blank" rel="noopener" className="mt-3 w-full inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-2xl font-bold btn-press hover:bg-white/10">
                 <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
               </a>
