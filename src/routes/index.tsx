@@ -36,6 +36,7 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(948) 888-6444";
 const TEL = "tel:+19488886444";
+const SMS = "sms:+19488886444";
 const WA = "https://api.whatsapp.com/send?phone=19488886444&text=Hi%20FleetCare%2C%20I%20need%20roadside%20assistance.";
 
 const NAV = [
