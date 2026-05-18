@@ -52,6 +52,7 @@ const SERVICES = [
   { icon: Disc3, title: "Mounting & Balancing", desc: "Precision mounting and balancing on-site, done right." },
   { icon: RotateCw, title: "Tire Rotation", desc: "Extend tire life and improve handling with regular rotation." },
   { icon: Wrench, title: "Tire Repairs", desc: "Puncture repair and flat tire solutions wherever you are." },
+  { icon: Gauge, title: "TPMS", desc: "Tire Pressure Monitoring System diagnostics, sensor replacement, and reprogramming for safer driving." },
   { icon: BatteryCharging, title: "Jump Starts", desc: "Dead battery? We'll get you back on the road fast." },
   { icon: Fuel, title: "Gas Delivery", desc: "Out of fuel? We deliver gas straight to your vehicle." },
   { icon: KeyRound, title: "Lockout Service", desc: "Locked out? Our team will get you back in safely." },
