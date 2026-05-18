@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
-  Phone, MessageCircle, Menu, X, Zap, ShieldCheck, Clock, MapPin, Wrench,
-  Disc3, RotateCw, CircleDot, BatteryCharging, Fuel, KeyRound, Users, Heart,
+  Phone, MessageCircle, MessageSquare, Menu, X, Zap, ShieldCheck, Clock, MapPin, Wrench,
+  Disc3, RotateCw, CircleDot, BatteryCharging, Fuel, KeyRound, Users, Heart, Gauge,
   ChevronLeft, ChevronRight, Mail, Facebook, Instagram, Twitter, ArrowRight, Star,
 } from "lucide-react";
 import logo from "@/assets/fleetcare-logo.jpeg";
