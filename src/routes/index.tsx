@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
-  Phone, MessageCircle, Menu, X, Zap, ShieldCheck, Clock, MapPin, Wrench,
-  Disc3, RotateCw, CircleDot, BatteryCharging, Fuel, KeyRound, Users, Heart,
+  Phone, MessageCircle, MessageSquare, Menu, X, Zap, ShieldCheck, Clock, MapPin, Wrench,
+  Disc3, RotateCw, CircleDot, BatteryCharging, Fuel, KeyRound, Users, Heart, Gauge,
   ChevronLeft, ChevronRight, Mail, Facebook, Instagram, Twitter, ArrowRight, Star,
 } from "lucide-react";
 import logo from "@/assets/fleetcare-logo.jpeg";
@@ -36,6 +36,7 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(948) 888-6444";
 const TEL = "tel:+19488886444";
+const SMS = "sms:+19488886444";
 const WA = "https://api.whatsapp.com/send?phone=19488886444&text=Hi%20FleetCare%2C%20I%20need%20roadside%20assistance.";
 
 const NAV = [
@@ -51,6 +52,7 @@ const SERVICES = [
   { icon: Disc3, title: "Mounting & Balancing", desc: "Precision mounting and balancing on-site, done right." },
   { icon: RotateCw, title: "Tire Rotation", desc: "Extend tire life and improve handling with regular rotation." },
   { icon: Wrench, title: "Tire Repairs", desc: "Puncture repair and flat tire solutions wherever you are." },
+  { icon: Gauge, title: "TPMS", desc: "Tire Pressure Monitoring System diagnostics, sensor replacement, and reprogramming for safer driving." },
   { icon: BatteryCharging, title: "Jump Starts", desc: "Dead battery? We'll get you back on the road fast." },
   { icon: Fuel, title: "Gas Delivery", desc: "Out of fuel? We deliver gas straight to your vehicle." },
   { icon: KeyRound, title: "Lockout Service", desc: "Locked out? Our team will get you back in safely." },
@@ -113,6 +115,9 @@ function Landing() {
             <a href={TEL} className="hidden sm:inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 lg:px-5 py-2.5 rounded-md text-sm font-bold btn-press shadow-premium hover:bg-primary-glow">
               <Phone className="h-4 w-4" /> Call Now
             </a>
+            <a href={SMS} className="hidden sm:inline-flex items-center gap-2 border border-primary text-primary px-3 py-2.5 rounded-md text-sm font-bold btn-press hover:bg-primary hover:text-primary-foreground">
+              <MessageSquare className="h-4 w-4" /> Text
+            </a>
             <button aria-label="Menu" onClick={() => setOpen(v => !v)} className="lg:hidden p-2 -mr-2 text-primary">
               {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -155,6 +160,9 @@ function Landing() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a href={TEL} className="inline-flex items-center justify-center gap-2 bg-accent-gold text-accent-gold-foreground px-6 py-3.5 rounded-md font-bold btn-press shadow-glow-gold">
                 <Phone className="h-5 w-5" /> {PHONE}
+              </a>
+              <a href={SMS} className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-md font-bold btn-press hover:bg-white/10">
+                <MessageSquare className="h-5 w-5" /> Text Us
               </a>
               <a href={WA} target="_blank" rel="noopener" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-md font-bold btn-press hover:bg-white/10">
                 <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
@@ -298,6 +306,9 @@ function Landing() {
                 </div>
                 <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </a>
+              <a href={SMS} className="mt-3 w-full inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-2xl font-bold btn-press hover:bg-white/10">
+                <MessageSquare className="h-5 w-5" /> Text Us
+              </a>
               <a href={WA} target="_blank" rel="noopener" className="mt-3 w-full inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-2xl font-bold btn-press hover:bg-white/10">
                 <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
               </a>
@@ -403,6 +414,7 @@ function Landing() {
               <div className="text-sm font-bold tracking-wider text-accent-gold">CONTACT</div>
               <ul className="mt-5 space-y-3 text-sm text-white/75">
                 <li><a href={TEL} className="flex items-center gap-2 hover:text-accent-gold"><Phone className="h-4 w-4" /> {PHONE}</a></li>
+                <li><a href={SMS} className="flex items-center gap-2 hover:text-accent-gold"><MessageSquare className="h-4 w-4" /> Text {PHONE}</a></li>
                 <li><a href="mailto:info@fleetcaresolutions.com" className="flex items-center gap-2 hover:text-accent-gold"><Mail className="h-4 w-4" />info@fleetcaresolutions.com</a></li>
                 <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5" /> Hampton Roads, Virginia</li>
               </ul>
@@ -424,10 +436,13 @@ function Landing() {
 
       {/* MOBILE STICKY CTA */}
       <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-border p-3 flex gap-2 shadow-[0_-8px_30px_-10px_rgba(0,0,0,0.15)]">
-        <a href={TEL} className="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3 rounded-md font-bold btn-press">
-          <Phone className="h-4 w-4" /> Call Now
+        <a href={TEL} className="flex-1 inline-flex items-center justify-center gap-1.5 bg-primary text-primary-foreground py-3 rounded-md font-bold btn-press text-xs sm:text-sm">
+          <Phone className="h-4 w-4" /> Call
         </a>
-        <a href={WA} target="_blank" rel="noopener" className="flex-1 inline-flex items-center justify-center gap-2 bg-accent-gold text-accent-gold-foreground py-3 rounded-md font-bold btn-press">
+        <a href={SMS} className="flex-1 inline-flex items-center justify-center gap-1.5 border border-primary text-primary py-3 rounded-md font-bold btn-press hover:bg-primary hover:text-primary-foreground text-xs sm:text-sm">
+          <MessageSquare className="h-4 w-4" /> Text
+        </a>
+        <a href={WA} target="_blank" rel="noopener" className="flex-1 inline-flex items-center justify-center gap-1.5 bg-accent-gold text-accent-gold-foreground py-3 rounded-md font-bold btn-press text-xs sm:text-sm">
           <MessageCircle className="h-4 w-4" /> WhatsApp
         </a>
       </div>
