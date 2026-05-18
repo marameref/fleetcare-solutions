@@ -161,6 +161,9 @@ function Landing() {
               <a href={TEL} className="inline-flex items-center justify-center gap-2 bg-accent-gold text-accent-gold-foreground px-6 py-3.5 rounded-md font-bold btn-press shadow-glow-gold">
                 <Phone className="h-5 w-5" /> {PHONE}
               </a>
+              <a href={SMS} className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-md font-bold btn-press hover:bg-white/10">
+                <MessageSquare className="h-5 w-5" /> Text Us
+              </a>
               <a href={WA} target="_blank" rel="noopener" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 py-3.5 rounded-md font-bold btn-press hover:bg-white/10">
                 <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
               </a>
