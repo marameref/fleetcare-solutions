@@ -234,8 +234,8 @@ function Landing() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
             <div className="text-xs font-bold tracking-[0.2em] text-accent-gold">PRICING</div>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-primary">Transparent & Affordable</h2>
-            <p className="mt-4 text-muted-foreground">Honest, upfront pricing with no surprises. Pay only for what you need.</p>
+            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-primary">Request a Custom Quote</h2>
+            <p className="mt-4 text-muted-foreground">Competitive, personalized pricing for mobile tire service and roadside assistance across Hampton Roads, Virginia. Contact us today for your exact rate.</p>
           </div>
           <div className="mt-14 max-w-4xl mx-auto">
             <div className="bg-card border border-border rounded-2xl p-8 lg:p-10">
