@@ -65,12 +65,6 @@ const WHY = [
   { icon: Heart, title: "Customer First", desc: "Your safety and satisfaction are always our top priority." },
 ];
 
-const PRICING = [
-  { title: "Tire Repair", items: ["Flat Tire Repair", "Plug Patch", "Valve Replacement"], price: 25 },
-  { title: "Mount & Balance", items: ["Mounting", "Balancing", "New Valve"], price: 50, featured: true },
-  { title: "Tire Rotation", items: ["Rotate All 4 Tires", "Inspection", "Pressure Check"], price: 20 },
-  { title: "Other Services", items: ["Jump Starts", "Gas Delivery", "Lockout Service"], price: 30 },
-];
 
 const AREAS = ["Chesapeake", "Virginia Beach", "Norfolk", "Suffolk", "Newport News", "Portsmouth", "Hampton"];
 
