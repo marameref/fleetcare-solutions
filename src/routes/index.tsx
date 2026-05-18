@@ -115,6 +115,9 @@ function Landing() {
             <a href={TEL} className="hidden sm:inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 lg:px-5 py-2.5 rounded-md text-sm font-bold btn-press shadow-premium hover:bg-primary-glow">
               <Phone className="h-4 w-4" /> Call Now
             </a>
+            <a href={SMS} className="hidden sm:inline-flex items-center gap-2 border border-primary text-primary px-3 py-2.5 rounded-md text-sm font-bold btn-press hover:bg-primary hover:text-primary-foreground">
+              <MessageSquare className="h-4 w-4" /> Text
+            </a>
             <button aria-label="Menu" onClick={() => setOpen(v => !v)} className="lg:hidden p-2 -mr-2 text-primary">
               {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
