@@ -427,7 +427,19 @@ function Landing() {
           </div>
           <div className="mt-12 pt-6 border-t border-white/10 text-center text-xs text-white/50">
             © {new Date().getFullYear()} FleetCare Solutions LLC. All Rights Reserved.
+            <span className="block mt-1">
+              Designed &amp; developed by{" "}
+              <a
+                href="https://opsfuxiontech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-gold hover:text-accent-gold underline underline-offset-2 transition-colors"
+              >
+                Opsfuxion Technologies Ltd
+              </a>
+            </span>
           </div>
+
         </div>
       </footer>
 
