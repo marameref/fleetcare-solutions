@@ -426,7 +426,7 @@ function Landing() {
             </div>
           </div>
           <div className="mt-12 pt-6 border-t border-white/10 text-center text-xs text-white/50">
-            © {new Date().getFullYear()} FleetCare Solutions LLC. All Rights Reserved.
+            © {new Date().getFullYear()} FleetCare Solutions LLC. All Rights Reserved. | Website designed &amp; developed by Opsfuxion Technologies Ltd.
           </div>
         </div>
       </footer>
