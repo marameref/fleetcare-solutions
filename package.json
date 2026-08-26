@@ -9,7 +9,10 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "dev:spa": "vite --config vite.config.spa.ts",
+    "build:spa": "vite build --config vite.config.spa.ts",
+    "preview:spa": "vite preview --config vite.config.spa.ts --outDir dist-spa"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
